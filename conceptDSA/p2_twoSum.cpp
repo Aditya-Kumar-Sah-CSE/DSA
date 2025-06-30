@@ -9,7 +9,7 @@ int x;
  int n,i;
  cout<<"Enter array size: ";
  cin>>n;
-cout<<"Enter array element :2"
+cout<<"Enter array element :2";
     for( i=0;i<n;i++){
         int t;
         cin>>t;
