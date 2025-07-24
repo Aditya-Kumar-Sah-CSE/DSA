@@ -19,7 +19,7 @@ cout<<"Enter array element : \n";
     }
     int count=n*m;
     int maxc = m-1,minr=0,maxr=n-1,minc=0;
-     while(minr<=maxr && minc <= maxc  ){
+     while(minr<=maxr && minc <= maxc){
         // if(minr<=maxr || minc <= maxc) break;
         //for TOP : L to R
     for( j=minc;j<=maxc ;j++){
