@@ -1,0 +1,1 @@
+{"name":"Local: p27_ior2","url":"c:\\Users\\adity\\DSA-problem-contest\\codeforces\\cp31\\p27_ior2.cpp","tests":[{"id":1755283922914,"input":"3\n6\n2 2 1 2 1 2\n3\n1 2 1\n4\n1 1 1 1\n","output":"\n2\n-1\n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\adity\\DSA-problem-contest\\codeforces\\cp31\\p27_ior2.cpp","group":"local","local":true}
