@@ -36,3 +36,64 @@ int main() {
     cout << endl;
     return 0;
 }
+
+
+//  count inversion 
+class Solution {
+    int count =0;
+    void  merge(vector<int>& arr,int start , int mid ,int end ){
+    vector<int> temp(end - start + 1 );
+  
+    int left = start , right = mid+1 , index = 0;
+    while(left<= mid && right <= end){
+        // sort each small box ;
+        if(arr[left]<=arr[right]){
+            temp[index] = arr[left];
+            index++;
+            left++;
+           
+        }
+        else{
+            temp[index] = arr[right];
+            index++;
+            right++;
+            count+=(mid - left+1);
+        }
+    }
+    // left element fill in it 
+    while(left<=mid){
+         temp[index] = arr[left];
+            index++;
+            left++;
+    }
+      while(right <= end){
+         temp[index] = arr[right];
+            index++;
+            right++;
+    }
+// original arr temp replace 
+index =0;
+  while(start<=end){
+          arr[start] = temp[index];
+            index++;
+            start++;
+    }
+
+}
+void divide(vector<int>& arr , int start ,int end){
+if(start == end) return;
+int mid = start + (end - start )/2;
+divide(arr,start,mid);
+divide(arr,mid+1,end);
+
+ merge(arr,start,mid,end);
+}
+  public:
+    int inversionCount(vector<int> &arr) {
+        // Code Here
+        divide(arr,0,arr.size() - 1);
+        
+        return count;
+        
+    }
+};
