@@ -1,0 +1,1 @@
+{"name":"Local: p20_ab","url":"c:\\Users\\adity\\DSA-problem-contest\\cp31\\R900\\p20_ab.cpp","tests":[{"id":1768317125968,"input":"4\nb\naabbbabaa\nabbb\nabbaab\n","output":"b\naabbbabaa\nbbbb\nabbaaa"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\adity\\DSA-problem-contest\\cp31\\R900\\p20_ab.cpp","group":"local","local":true}
