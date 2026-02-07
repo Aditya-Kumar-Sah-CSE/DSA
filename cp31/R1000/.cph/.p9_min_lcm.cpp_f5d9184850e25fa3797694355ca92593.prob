@@ -1,0 +1,1 @@
+{"name":"Local: p9_min_lcm","url":"c:\\Users\\adity\\Desktop\\DSA-problem-contest\\cp31\\R1000\\p9_min_lcm.cpp","tests":[{"id":1770423659144,"input":"4\n2\n9\n5\n10\n","output":"1 1\n3 6\n1 4\n5 5\n\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\adity\\Desktop\\DSA-problem-contest\\cp31\\R1000\\p9_min_lcm.cpp","group":"local","local":true}
