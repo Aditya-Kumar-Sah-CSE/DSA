@@ -18,6 +18,17 @@
  */
 class Solution {
 public:
+//! Approach2
+void preOrder(TreeNode* root , int level,vector<int>& res){
+    if(root == NULL) return ;
+
+    if(res.size()<level){
+        res.push_back(root->val);
+    }
+    preOrder(root->right,level+1,res);
+    preOrder(root->left,level+1,res);
+}
+
     vector<int> rightSideView(TreeNode* root) {
 
 
@@ -47,9 +58,14 @@ public:
 
         // return res;
 
-// ! Approach2 - DFS 
+//! Approach2 - DFS
+ vector<int> res;
+
+preOrder(root,1,res);
 
 
+
+return res;
     }
 };
 // @lc code=end
